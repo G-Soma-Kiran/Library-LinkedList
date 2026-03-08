@@ -15,8 +15,8 @@ While learning C , I was amazed by the idea of libraries. I wanted to create my 
 - Iterator support for traversal<br>
 ## Example usage
 <pre>
-#include\<stdio.h\> <br>
-#include\<LinkedList.h\> <br>
+#include &lt stdio.h &gt <br>
+#include &lt LinkedList.h &gt <br>
 int main(){<br>
   List mylist = list.Initialize();<br>
   for(int i=1;i<=100;i++){<br>
