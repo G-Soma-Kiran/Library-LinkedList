@@ -42,7 +42,9 @@ int main(){<br>
   Traverse = list.Iter.stop(mylist , Traverse);<br>
   <br>
   printf("After Traversing mylist : ");<br>
-  list.Print(mylist);
+  list.Print(mylist);<br>
+  ListElement(mylist , 1) = 11;<br>
+  list.Print(mylist);<br>
   return 0;
 }
 </pre>
