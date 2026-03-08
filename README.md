@@ -45,5 +45,30 @@ int main(){<br>
   list.Print(mylist);
   return 0;
 }
-<pre>
+</pre>
 
+## Process to install project in your machine
+<pre>
+- Copy and Paste the header (.h) file in root_dir\MinGW\include
+- make directories as follows
+   => some_dir\Library\lib\
+- Copy and Paste the libLinkedList.a file in that diectory
+- write a sample code in any directory and while compliling use the following command
+    => gcc sample_code.c -Lsome_dir/Library/lib -lLinkedList -o a
+- run the code using
+    => ./a
+</pre>
+## Project structure (Ideally)
+<pre>
+Windows-SSD(C:)
+├── MinGW/
+│   └── include/
+|         └──LinkedList.h
+│
+├── Library/
+│     └── lib/
+|          └──libLinkedList.a
+│
+├──MyFolder/
+|      └── sample_code.c
+</pre>
