@@ -99,3 +99,6 @@ project/
 │
 └── sample_code.c
 </pre>
+# cons
+-No safe nested loop support.<br>
+-Not generic so only supported for int data type.<br>
