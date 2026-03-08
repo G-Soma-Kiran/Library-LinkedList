@@ -1,10 +1,10 @@
 # LinkedList Library in C
-An oops style and encapulated and abstracted Linked List library implementation driven to mimic pythons list behaviour in pure C.
+An oops style and encapulated and abstracted Linked List library implementation driven to mimic python's list behaviour in pure C.
 <br>
-This project explores how low-level libraries can provide clean methods and abstraction even without object-oriented pprogramming. The library hides its internal data structures and exposes operations through a structured interface.
+This project explores how low-level libraries can provide clean methods and abstraction even without object-oriented programming. The library hides it's internal data structures and exposes operations through a structured interface.
 <br>
 # Motivation
-While learning C , I was amazed by the idea of libraries. I wanted to create my own library one day with all useful functions that had to be written everytime otherwise. for example:- ceil , floor etc.... So to tk=ake a step forward in the diraction of that goal I tried to make a samll scale library as a trial. As i was fairly new to the Linked List idea , I thought why not make a Library on this to futhur improve my intuition and knowledge.
+While learning C , I was amazed by the idea of libraries. I wanted to create my own library one day with all useful functions that had to be written everytime otherwise. for example:- ceil , floor etc.... So to take a step forward in the direction of that goal I tried to make a small scale library as a trial. As i was fairly new to the Linked List idea , I thought why not make a Library on this to futhur improve my intuition and knowledge.
 <br>
 # Features
 - Encapsulated data structure and abstracted methods.<br>
@@ -14,6 +14,7 @@ While learning C , I was amazed by the idea of libraries. I wanted to create my 
 - array like assignment possible<br>
 - Iterator support for traversal<br>
 ## Example usage
+<pre>
 #include<stdio.h><br>
 #include<LinkedList.h><br>
 int main(){<br>
@@ -44,4 +45,5 @@ int main(){<br>
   list.Print(mylist);
   return 0;
 }
+<pre>
 
