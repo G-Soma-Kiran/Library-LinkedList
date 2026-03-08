@@ -19,7 +19,7 @@ While learning C , I was amazed by the idea of libraries. I wanted to create my 
 #include &ltLinkedList.h&gt <br>
 int main(){<br>
   List mylist = list.Initialize();<br>
-  for(int i=1;i<=100;i++){<br>
+  for(int i=1;i<=20;i++){<br>
     list.Append(mylist , i);<br>
     list.Append(mylist , i+1);<br>
   }<br>
@@ -70,5 +70,30 @@ Windows-SSD(C:)
 |          └──libLinkedList.a
 │
 ├──MyFolder/
-|      └── sample_code.c
+│      └── sample_code.c
+<br>compile command : gcc sample_code.c -LC:/Library/lib -lLinkedList -o a
+</pre>
+<pre>
+# Alternate process
+If the above process does not work or the windows policy blocks exe fike from running then :-
+-Make a directory project
+-Make directories => include,lib
+-make a file sample_code.c
+-write your code
+-compile with the following command
+    => gcc sample_code.c -Iinclude -Llib -lLinkedList -o a
+-run exe file using
+    => ./a
+</pre>
+## project structure (Alternate)
+<pre>
+project/
+│
+├── include/
+│   └── LinkedList.h
+│
+├── lib/
+│   └── libLinkedList.a
+│
+└── sample_code.c
 </pre>
