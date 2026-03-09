@@ -21,14 +21,156 @@ Iter (*stop)(List list , Iter Element);
 
 typedef struct funcops {
 
+    /*Initializes a List object and initializes the parameters of list. Returns a List object. 
+    
+    Should be used compulsorily if List is being created newly and not a reference from methods.
+    
+    Example:-
+    
+    List mylist = list.Initialize();
+    
+    Time Complexity :- O(1)
+    
+    space Complexity :- O(1)
+    */
     List (*Initialize)(void);
+    /*Adds element to end of List.
+    
+    Example:-
+    
+    if mylist is [1, 2, 3, 4, 5]
+    
+    list.Append(mylist , 8);
+    
+    Result:
+
+    [1, 2, 3, 4, 5, 8]
+    
+    Time Complexity :- O(1)
+    
+    Space Complexity :- O(1)
+    */
     void (*Append)(List list, int value);
+    /*
+    Inserts an element at the given position.
+
+    Example:
+
+    list.Insert(mylist , 10 , 2);
+
+    Result:
+
+    [1,10,2,3]
+
+    Time Complexity :- O(n)
+
+    Space Complexity :- --
+    */
     int  (*Insert)(List list, int number, int position);
+    /*
+    Prints List 
+
+    Example:
+
+    list.Print(mylist);
+
+    Result:
+
+    [1, 2, 3, 4, 5]
+
+    Time  Complexity :- O(n)
+
+    Space Complexity :- --
+    */
     void (*Print)(List list);
+    /*
+    Pops an element of list with given position and returns the popped value.
+    
+    terminates running code if head is invalid or any other error occurs.
+
+    Example:
+
+    mylist => [5, 4, 3, 2, 1]
+
+    list.Pop(mylist , 2);
+
+    Result:
+
+    mylist => [5, 3, 2, 1]
+
+    Time Complexity :- O(n)
+
+    Space Complexity :- --
+    */
     int  (*Pop)(List list, int position);
+    /*
+    Returns the length of given List.
+
+    Example:
+
+    mylist => [9, 60, 32, 21, 11]
+
+    printf("%d\n",list.Len(mylist));
+
+    Result:
+
+    5
+
+    Time Complexity:- O(1)
+
+    Space Complexity:- --
+    */
     int  (*Len)(List list);
+    /*Reverses List using my own technique.
+    
+    Example:
+
+    mylist => [9, 60, 32, 21, 11]
+
+    list.Reverse(mylist);
+
+    Result:
+
+    mylist => [11, 21, 32, 60, 9]
+
+    Time Complexity:- O(n)
+
+    Space Complexity:- O(1)
+    */
     void (*Reverse)(List list);
+    /*Reverses List using standard way.
+    
+    Example:
+
+    mylist => [9, 60, 32, 21, 11]
+
+    list.std_Reverse(mylist);
+
+    Result:
+
+    mylist => [11, 21, 32, 60, 9]
+
+    Time Complexity:- O(n)
+
+    Space Complexity:- O(1)
+    */
     void (*std_Reverse)(List list);
+    /*Reverses List using recursion.
+    
+    Example:
+
+    mylist => [9, 60, 32, 21, 11]
+
+    list.recurse_Reverse(mylist);
+
+    Result:
+
+    mylist => [11, 21, 32, 60, 9]
+
+    Time Complexity:- O(n)
+
+    Space Complexity:- O(n) (stack memory)
+    */
     void (*recurse_Reverse)(List list);
     void (*Reverse_sublist)(List list, int start, int end);
     void (*Delete)(List* list);
