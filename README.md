@@ -102,3 +102,6 @@ project/
 # cons
 -No safe nested loop support.<br>
 -Not generic so only supported for int data type.<br>
+## Future improvements
+-Can be used as a foundation to implement stacks and queues easily.<br>
+-Could be turned into generic format for better usecase.<br>
